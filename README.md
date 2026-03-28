@@ -10,11 +10,14 @@ Analyse a software project's purpose using Simon Sinek's **Start With Why** fram
 
 ## Installation
 
-Add a skill to your Claude Code configuration:
+Clone this repository, then copy the skill you want into your Claude Code skills directory:
 
 ```bash
-claude skill add --url https://github.com/AriHuttunen/claude-skills/tree/main/repo-why
+git clone https://github.com/AriHuttunen/claude-skills.git
+cp -r claude-skills/repo-why ~/.claude/skills/repo-why
 ```
+
+Claude Code automatically discovers skills from `~/.claude/skills/`. After copying, the skill is immediately available — invoke it with `/repo-why` or just ask about a project's purpose.
 
 ## License
 
